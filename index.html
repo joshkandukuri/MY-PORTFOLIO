@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh | 3D Interactive Portfolio — AI &amp; Data Science @ NIAT Kolhapur</title>
+  
+  <meta name="description" content="Futuristic 3D Interactive Portfolio of Josh, First-Year B.Tech Student in Computer Science, Artificial Intelligence, and Data Science at NIAT, Kolhapur, Maharashtra, India.">
+  <meta name="keywords" content="Josh, NIAT Kolhapur, Artificial Intelligence, Data Science, Portfolio, 3D WebGL, Machine Learning, Python">
+  <meta name="author" content="Josh Kandukuri">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Josh | AI &amp; Data Science Portfolio — NIAT Kolhapur">
+  <meta property="og:description" content="Futuristic 3D Interactive Portfolio of Josh — NIAT Kolhapur CS (AI &amp; Data Science)">
+  <meta property="og:image" content="images/josh-profile.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN for High-Tech Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Cinematic Background Lighting -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Interactive 3D AI Neural Network Canvas Container -->
+  <div id="neural-canvas-container" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" title="Josh Portfolio">
+        <span class="brand-icon">J</span>
+        <span>JOSH<span class="brand-dot">.AI</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="nav-actions">
+        <!-- Futuristic Audio Synthesizer Toggle -->
+        <button id="audio-toggle-btn" class="audio-toggle-btn" title="Toggle Futuristic Cyber Audio FX" aria-label="Toggle Sound">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+
+        <!-- Quick Resume Download Button in Header -->
+        <a href="assets/Josh_Kandukuri_Resume.pdf" download="Josh_Kandukuri_Resume.pdf" class="btn btn-sm btn-secondary download-resume-trigger">
+          <i class="fas fa-file-download"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo">
+        <span class="brand-icon">J</span>
+        <span>JOSH<span class="brand-dot">.AI</span></span>
+      </span>
+      <button id="mobile-drawer-close" class="modal-close-btn" aria-label="Close Navigation">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="#hackathons" class="mobile-nav-link">Hackathons</a></li>
+      <li><a href="#certificates" class="mobile-nav-link">Certificates</a></li>
+      <li><a href="#journey" class="mobile-nav-link">Learning Journey</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="assets/Josh_Kandukuri_Resume.pdf" download="Josh_Kandukuri_Resume.pdf" class="btn btn-primary download-resume-trigger" style="width: 100%;">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Website Content Wrapper -->
+  <main class="site-content">
+
+    <!-- ==========================================================================
+         HERO SECTION: "Hello, I'm Josh" + Top-Right Profile Photograph
+         Designed so that both photo and introduction are 100% visible without scrolling!
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-layout">
+        
+        <!-- Left Hero Introduction Column -->
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="hero-status-pill">
+            <span class="pulse-beacon"></span>
+            <span>Available for AI/ML Projects &amp; Collaborations</span>
+          </div>
+
+          <!-- Headline & Salutation -->
+          <div>
+            <div class="hero-salutation">Hello, I'm</div>
+            <h1 class="hero-title">
+              <span class="gradient-text">Josh</span>
+            </h1>
+          </div>
+
+          <!-- Academic Designation & College -->
+          <div class="hero-role-badge">
+            First-Year B.Tech Student in Computer Science, Artificial Intelligence &amp; Data Science
+          </div>
+
+          <div class="hero-institution-tag">
+            <i class="fas fa-university"></i>
+            <span>NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur</span>
+          </div>
+
+          <!-- Introduction Paragraph -->
+          <p class="hero-bio-text">
+            Passionate about building intelligent AI systems, neural network architectures, and data-driven solutions. Currently laying strong computational and mathematical foundations at NIAT (NxtWave of Innovation in Advanced Technologies).
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <!-- Functioning Download Resume Button -->
+            <a href="assets/Josh_Kandukuri_Resume.pdf" download="Josh_Kandukuri_Resume.pdf" class="btn btn-secondary download-resume-trigger">
+              <i class="fas fa-file-pdf"></i>
+              <span>Download Resume</span>
+            </a>
+
+            <!-- Quick Modal View -->
+            <button id="view-resume-modal-btn" class="btn btn-glass" title="Quick view formatted resume">
+              <i class="fas fa-eye"></i>
+              <span>View Online</span>
+            </button>
+          </div>
+
+          <!-- Social / Direct Contact Quick Strip -->
+          <div class="hero-social-strip">
+            <a id="hero-linkedin-link" href="https://www.linkedin.com/in/josh-kandukuri-051531408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a id="hero-github-link" href="https://github.com/josh-kandukuri" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a id="hero-email-link" href="mailto:joshkandukuri08@gmail.com" class="social-icon-btn" title="Email Josh">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a id="hero-phone-link" href="tel:+919347339725" class="social-icon-btn" title="Call Josh">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Real Profile Photograph in Premium Circular Frame with 3D Tilt -->
+        <div class="hero-portrait-wrapper">
+          <div class="portrait-3d-card" title="Josh — First-Year B.Tech CS (AI &amp; Data Science) @ NIAT Kolhapur">
+            
+            <!-- Concentric Holographic Orbit Rings -->
+            <div class="orbit-ring orbit-ring-outer"></div>
+            <div class="orbit-ring orbit-ring-inner"></div>
+
+            <!-- Ambient Radial Glow -->
+            <div class="portrait-glow-backdrop"></div>
+
+            <!-- Glass Frame Housing with Electric-Blue & Violet Lighting -->
+            <div class="portrait-glass-housing">
+              <div class="portrait-inner-frame">
+                <!-- Josh's Real Uploaded Profile Photo (Object-fit cover, zero distortion) -->
+                <img id="hero-profile-img" src="images/josh-profile.jpg" alt="Josh - B.Tech CS (AI &amp; Data Science) Student at NIAT Kolhapur" class="josh-profile-img" />
+              </div>
+            </div>
+
+            <!-- Floating 3D Badge -->
+            <div class="portrait-floating-tag">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Tech CS (AI &amp; DS) • NIAT Kolhapur</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-user-astronaut"></i> Biography</div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Bridging computational theory, artificial neural networks, and real-world engineering at NIAT (NxtWave of Innovation in Advanced Technologies).</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative & Quick Stats -->
+          <div class="about-card">
+            <div class="about-text-content">
+              <p>
+                I am an enthusiastic first-year B.Tech undergraduate specializing in <strong>Computer Science, Artificial Intelligence, and Data Science</strong> at <strong>NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur, Maharashtra, India</strong>.
+              </p>
+              <p>
+                My passion lies at the frontier of mathematical computing, machine learning pipelines, and deep neural structures. I believe in understanding technology from first principles—from linear algebraic matrix operations and multivariate calculus to algorithmic complexity and weight optimization.
+              </p>
+              <p>
+                Beyond academics, I am actively building my foundational toolset, collaborating with peers on cutting-edge engineering ideas, and preparing for collegiate hackathons and AI research challenges.
+              </p>
+            </div>
+
+            <div class="quick-stats-grid">
+              <div class="stat-pill">
+                <span class="stat-icon">🎓</span>
+                <div class="stat-info">
+                  <span class="stat-label">Academic Status</span>
+                  <span class="stat-value">1st Year B.Tech</span>
+                </div>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-icon">🧠</span>
+                <div class="stat-info">
+                  <span class="stat-label">Major</span>
+                  <span class="stat-value">AI &amp; Data Science</span>
+                </div>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-icon">🏛️</span>
+                <div class="stat-info">
+                  <span class="stat-label">Institution</span>
+                  <span class="stat-value">NIAT Kolhapur</span>
+                </div>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-icon">📍</span>
+                <div class="stat-info">
+                  <span class="stat-label">Location</span>
+                  <span class="stat-value">Maharashtra, IN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Hacker/Developer Terminal -->
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn min"></span>
+                <span class="terminal-btn max"></span>
+              </div>
+              <div class="terminal-title">josh@niat-kolhapur: ~</div>
+              <div style="font-size: 0.72rem; color: var(--neon-cyan);"><i class="fas fa-terminal"></i> bash</div>
+            </div>
+
+            <div class="terminal-tabs">
+              <button class="terminal-tab active" data-tab="profile">profile.sh</button>
+              <button class="terminal-tab" data-tab="tech">skills.json</button>
+              <button class="terminal-tab" data-tab="academics">coursework.log</button>
+              <button class="terminal-tab" data-tab="aspirations">aspirations.txt</button>
+            </div>
+
+            <div id="terminal-content-body" class="terminal-body">
+              <div class="term-line"><span class="term-prompt">josh@niat-kolhapur:~$</span> <span class="term-cmd">whoami</span></div>
+              <div class="term-output">
+                <p><span class="term-highlight">Name:</span> Josh Kandukuri</p>
+                <p><span class="term-highlight">Degree:</span> B.Tech in CS (AI &amp; Data Science)</p>
+                <p><span class="term-highlight">Institution:</span> NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur</p>
+                <p><span class="term-highlight">Academic Year:</span> 1st Year (Class of 2029)</p>
+                <p><span class="term-highlight">Location:</span> Kolhapur, Maharashtra, India</p>
+              </div>
+              <div class="term-line" style="margin-top: 14px;">
+                <span class="term-prompt">josh@niat-kolhapur:~$</span> <span class="term-cursor"></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TECH MATRIX SECTION
+         ========================================================================== -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-microchip"></i> Capabilities</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Core competencies across Artificial Intelligence, Data Science, foundational programming, and modern computational tools.</p>
+        </div>
+
+        <!-- Dynamic Container for Skills (populated by js/main.js & editable in js/portfolio-data.js) -->
+        <div id="skills-grid-container" class="skills-grid">
+          <!-- Fallback semantic markup if JS is loading -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">AI &amp; Machine Learning</h3>
+            <p class="skill-category-desc">NumPy, Pandas, Scikit-Learn, Neural Network Foundations</p>
+          </div>
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Core Programming</h3>
+            <p class="skill-category-desc">Python, C, C++, Data Structures &amp; Algorithms</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-layer-group"></i> Showcase</div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Practical applications of artificial intelligence, predictive machine learning, and high-performance algorithms.</p>
+        </div>
+
+        <!-- Dynamic Projects Grid (populated by js/main.js from js/portfolio-data.js) -->
+        <div id="projects-grid-container" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HACKATHONS SECTION
+         ========================================================================== -->
+    <section id="hackathons" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-trophy"></i> Competitions</div>
+          <h2 class="section-title">Hackathons &amp; <span class="gradient-text">Sprints</span></h2>
+          <p class="section-subtitle">High-velocity engineering challenges, sprint competitions, and collaborative problem-solving tracks.</p>
+        </div>
+
+        <!-- Dynamic Hackathons Grid (populated by js/main.js from js/portfolio-data.js) -->
+        <div id="hackathons-grid-container" class="hackathons-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATES & CREDENTIALS SECTION
+         ========================================================================== -->
+    <section id="certificates" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-certificate"></i> Verified Honors</div>
+          <h2 class="section-title">Certificates &amp; <span class="gradient-text">Credentials</span></h2>
+          <p class="section-subtitle">Verified specializations and technical coursework completed throughout my engineering journey.</p>
+        </div>
+
+        <!-- Dynamic Certificates Grid (populated by js/main.js from js/portfolio-data.js) -->
+        <div id="certificates-grid-container" class="certificates-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LEARNING JOURNEY & ROADMAP TIMELINE SECTION
+         ========================================================================== -->
+    <section id="journey" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-route"></i> Trajectory</div>
+          <h2 class="section-title">Learning <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">My academic and technical trajectory from first-year fundamentals to advanced AI systems.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-track-line"></div>
+          <!-- Dynamic Timeline Items (populated by js/main.js from js/portfolio-data.js) -->
+          <div id="timeline-items-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESUME SECTION
+         ========================================================================== -->
+    <section id="resume" class="section-padding">
+      <div class="container">
+        <div class="resume-section-box">
+          <div class="resume-inner-grid">
+            
+            <div class="resume-summary-content">
+              <div class="section-badge" style="margin-bottom: 12px;"><i class="fas fa-file-alt"></i> Official Curriculum Vitae</div>
+              <h3>Curriculum <span class="gradient-text">Vitae</span></h3>
+              <p>
+                Download my comprehensive, ATS-optimized resume covering academic background at NIAT Kolhapur, technical proficiencies in Python, Machine Learning, and Computer Science foundations, as well as project implementations.
+              </p>
+
+              <div class="resume-highlights-grid">
+                <div class="resume-highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>B.Tech in CS (AI &amp; Data Science)</span>
+                </div>
+                <div class="resume-highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>NIAT Kolhapur, Maharashtra</span>
+                </div>
+                <div class="resume-highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Neural Networks &amp; ML Algorithms</span>
+                </div>
+                <div class="resume-highlight-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Clean ATS-Friendly Layout</span>
+                </div>
+              </div>
+
+              <div class="resume-actions-row">
+                <!-- Working Instant Download Button -->
+                <a href="assets/Josh_Kandukuri_Resume.pdf" download="Josh_Kandukuri_Resume.pdf" class="btn btn-primary download-resume-trigger">
+                  <i class="fas fa-download"></i>
+                  <span>Download Resume (PDF)</span>
+                </a>
+
+                <!-- View in New Tab -->
+                <a href="assets/resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>View Printable Version</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Document Card Representation -->
+            <div class="resume-preview-doc-card">
+              <div class="doc-header-line">JOSH KANDUKURI</div>
+              <div class="doc-text-muted" style="margin-bottom: 6px;">B.Tech — CS, Artificial Intelligence &amp; Data Science</div>
+              <div class="doc-text-muted">NIAT Kolhapur, Maharashtra, India</div>
+
+              <div class="doc-section-title">Education</div>
+              <div style="font-weight: 600; font-size: 0.72rem;">NIAT, Kolhapur</div>
+              <div class="doc-text-muted">2026 – Present (First Year B.Tech)</div>
+
+              <div class="doc-section-title">Core Skills</div>
+              <div class="doc-text-muted">Python, C/C++, NumPy, Pandas, Scikit-Learn, WebGL, DSA</div>
+
+              <div class="doc-section-title">Projects</div>
+              <div style="font-size: 0.68rem; color: #334155;">• Neural Vision &amp; Pattern Classifier<br>• Predictive Analytics Engine<br>• 3D Graph Pathfinding Visualizer</div>
+
+              <div class="doc-watermark-overlay">
+                <a href="assets/Josh_Kandukuri_Resume.pdf" download="Josh_Kandukuri_Resume.pdf" class="btn btn-sm btn-primary download-resume-trigger">
+                  <i class="fas fa-arrow-circle-down"></i> Download PDF
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (With Josh's Real Phone, Email, LinkedIn, GitHub)
+         ========================================================================== -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-satellite-dish"></i> Transmission</div>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have a project, hackathon team opening, or technical opportunity? Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Channels Panel -->
+          <div class="contact-info-panel">
+            
+            <!-- Phone Number Card (9347339725) -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-card-details">
+                <div class="contact-card-label">Phone &amp; WhatsApp</div>
+                <a id="contact-phone-link" href="tel:+919347339725" class="contact-card-value">
+                  <span id="contact-phone-display">+91 93473 39725</span>
+                </a>
+              </div>
+              <!-- One-click copy button -->
+              <button class="copy-action-btn copy-trigger" data-copy="9347339725" title="Copy Phone Number" aria-label="Copy Phone Number">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Email Address Card (joshkandukuri08@gmail.com) -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-card-details">
+                <div class="contact-card-label">Email Address</div>
+                <a id="contact-email-link" href="mailto:joshkandukuri08@gmail.com" class="contact-card-value">
+                  <span id="contact-email-display">joshkandukuri08@gmail.com</span>
+                </a>
+              </div>
+              <!-- One-click copy button -->
+              <button class="copy-action-btn copy-trigger" data-copy="joshkandukuri08@gmail.com" title="Copy Email Address" aria-label="Copy Email Address">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-details">
+                <div class="contact-card-label">LinkedIn Profile</div>
+                <a id="contact-linkedin-link" href="https://www.linkedin.com/in/josh-kandukuri-051531408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-card-value">
+                  <span id="contact-linkedin-display">linkedin.com/in/josh-kandukuri</span>
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/in/josh-kandukuri-051531408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="copy-action-btn" title="Open LinkedIn" aria-label="Open LinkedIn">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+
+            <!-- GitHub Card -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-card-details">
+                <div class="contact-card-label">GitHub Repository</div>
+                <a id="contact-github-link" href="https://github.com/josh-kandukuri" target="_blank" rel="noopener noreferrer" class="contact-card-value">
+                  <span id="contact-github-display">github.com/josh-kandukuri</span>
+                </a>
+              </div>
+              <a href="https://github.com/josh-kandukuri" target="_blank" rel="noopener noreferrer" class="copy-action-btn" title="Open GitHub" aria-label="Open GitHub">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-card-details">
+                <div class="contact-card-label">Campus Location</div>
+                <div class="contact-card-value" style="font-size: 0.92rem; color: #cbd5e1;">
+                  NIAT, Kolhapur, Maharashtra, India
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <h3 class="contact-form-title">Send a Direct <span class="gradient-text">Message</span></h3>
+            <p class="contact-form-sub">Drop a message and it will directly route to my personal inbox.</p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Describe your collaboration proposal, question, or project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i>
+                <span>Transmit Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-text">
+        © 2026 <strong>Josh Kandukuri</strong> • Crafted for B.Tech CS (AI &amp; Data Science)
+      </div>
+
+      <div class="footer-location-tag">
+        <i class="fas fa-map-pin"></i>
+        <span>NIAT Kolhapur, Maharashtra, India</span>
+      </div>
+
+      <button id="back-to-top" class="back-to-top-btn" title="Return to Top" aria-label="Return to Top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CERTIFICATE PREVIEW MODAL
+       ========================================================================== -->
+  <div id="cert-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-cert-title" class="modal-title">Certificate Details</h3>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-cert-image" src="" alt="Certificate Preview" class="modal-cert-image">
+        <div id="modal-cert-issuer" style="font-weight: 600; color: var(--neon-cyan); margin-bottom: 6px;"></div>
+        <div id="modal-cert-id" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;"></div>
+        <p id="modal-cert-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- ==========================================================================
+       SCRIPTS: Offline Three.js + CDN Fallback + Data + 3D Canvas + Interactions
+       ========================================================================== -->
+  <!-- 1. Offline Three.js library with CDN fallback -->
+  <script src="js/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- 2. Portfolio Configuration & Data Source (Editable by Josh) -->
+  <script src="js/portfolio-data.js"></script>
+
+  <!-- 3. 3D WebGL Neural Network Background Engine -->
+  <script src="js/neural-canvas.js"></script>
+
+  <!-- 4. Main Portfolio Interactions & UI Controller -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5226 >>
+stream
+0.039 0.098 0.184 rg 0 740 612 52 re f
+0.000 0.941 1.000 RG 2 w 0 740 612 0 re S
+BT /F2 22 Tf 1.000 1.000 1.000 rg 40 760 Td (JOSH KANDUKURI) Tj ET
+BT /F1 10 Tf 0.000 0.941 1.000 rg 40 747 Td (B.Tech - Computer Science, Artificial Intelligence & Data Science | NIAT Kolhapur) Tj ET
+BT /F1 9 Tf 0.278 0.333 0.412 rg 40 720 Td (Phone: +91 9347339725   |   Email: joshkandukuri08@gmail.com   |   Location: Kolhapur, Maharashtra, India) Tj ET
+BT /F1 9 Tf 0.008 0.518 0.780 rg 40 707 Td (LinkedIn: linkedin.com/in/josh-kandukuri   |   GitHub: github.com/josh-kandukuri) Tj ET
+0.886 0.910 0.941 RG 1 w 40 695 m 572 695 l S
+0.008 0.518 0.780 RG 1.5 w 40 672 m 572 672 l S
+BT /F2 12 Tf 0.008 0.518 0.780 rg 40 675 Td (EDUCATION) Tj ET
+BT /F2 10.5 Tf 0.059 0.090 0.165 rg 40 655 Td (NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur) Tj ET
+BT /F1 9.5 Tf 0.392 0.455 0.545 rg 450 655 Td (2026 - Present | First Year) Tj ET
+BT /F2 9.5 Tf 0.118 0.161 0.231 rg 40 641 Td (Bachelor of Technology: ) Tj /F1 9.5 Tf 0.278 0.333 0.412 rg (Computer Science, Artificial Intelligence & Data Science) Tj ET
+BT /F1 9 Tf 0.278 0.333 0.412 rg 40 627 Td (- Core Coursework: Data Structures & Algorithms, Artificial Intelligence, Linear Algebra, Python, C Programming.) Tj ET
+BT /F1 9 Tf 0.278 0.333 0.412 rg 40 614 Td (- Active participant in campus tech societies, algorithm workshops, and competitive AI sprints.) Tj ET
+0.008 0.518 0.780 RG 1.5 w 40 589 m 572 589 l S
+BT /F2 12 Tf 0.008 0.518 0.780 rg 40 592 Td (TECHNICAL SKILLS & CORE COMPETENCIES) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 572 Td (Programming Languages: ) Tj /F1 9 Tf 0.278 0.333 0.412 rg (Python (Advanced), C, C++, JavaScript (ES6+), SQL, HTML5/CSS3) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 558 Td (AI & Machine Learning: ) Tj /F1 9 Tf 0.278 0.333 0.412 rg (NumPy, Pandas, Scikit-Learn, Neural Network Fundamentals, Matplotlib, Data Wrangling) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 544 Td (Interactive & 3D Web: ) Tj /F1 9 Tf 0.278 0.333 0.412 rg (WebGL, Three.js, Responsive Glassmorphic UI/UX, DOM Manipulation) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 530 Td (Developer Tools: ) Tj /F1 9 Tf 0.278 0.333 0.412 rg (Git, GitHub, VS Code, Linux/Bash, Jupyter Notebooks, Google Colab (GPU)) Tj ET
+0.008 0.518 0.780 RG 1.5 w 40 505 m 572 505 l S
+BT /F2 12 Tf 0.008 0.518 0.780 rg 40 508 Td (FEATURED TECHNICAL PROJECTS) Tj ET
+BT /F2 10 Tf 0.059 0.090 0.165 rg 40 488 Td (Neural Network Vision & Pattern Classifier) Tj /F1 8.5 Tf 0.008 0.518 0.780 rg 350 488 Td ([Python, NumPy, Linear Algebra]) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 475 Td (- Implemented a multilayer neural network architecture from mathematical scratch in Python.) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 463.5 Td (- Formulated custom forward propagation, backpropagation, and loss functions (ReLU, Sigmoid, Cross-Entropy).) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 452.0 Td (- Demonstrated dynamic pattern classification accuracy and visualized training convergence.) Tj ET
+BT /F2 10 Tf 0.059 0.090 0.165 rg 40 436.5 Td (Data Science & Predictive Analytics Engine) Tj /F1 8.5 Tf 0.008 0.518 0.780 rg 350 436.5 Td ([Python, Pandas, Scikit-Learn, Matplotlib]) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 423.5 Td (- Designed end-to-end data pipeline: statistical cleaning, normalization, and outlier detection.) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 412.0 Td (- Trained regression and classification models to generate predictive forecasts with high R2 and RMSE metrics.) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 400.5 Td (- Generated correlation heatmaps and automated feature importance distribution graphs.) Tj ET
+BT /F2 10 Tf 0.059 0.090 0.165 rg 40 385.0 Td (Algorithmic Graph & Pathfinding Visualizer 3D) Tj /F1 8.5 Tf 0.008 0.518 0.780 rg 350 385.0 Td ([JavaScript, WebGL, Three.js, C++]) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 372.0 Td (- Interactive graph search engine rendering Dijkstra, A* Heuristic, BFS, and DFS traversals in 3D space.) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 360.5 Td (- Engineered real-time obstacle generation, weighted edge traversal, and dynamic queue optimizations.) Tj ET
+0.008 0.518 0.780 RG 1.5 w 40 338.0 m 572 338.0 l S
+BT /F2 12 Tf 0.008 0.518 0.780 rg 40 341.0 Td (HACKATHONS & ACADEMIC ACHIEVEMENTS) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 321.0 Td (NIT Kolhapur Tech Hackathon 2026 - AI Track Leader) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 309.0 Td (- Spearheaded team development of intelligent optimization model for campus smart energy allocation.) Tj ET
+BT /F2 9.5 Tf 0.059 0.090 0.165 rg 40 293.0 Td (National AI & Data Science Sprint 2026) Tj ET
+BT /F1 8.5 Tf 0.278 0.333 0.412 rg 50 281.0 Td (- Built automated data validation scripts during 36-hour sprint; finished in top national quartile.) Tj ET
+0.008 0.518 0.780 RG 1.5 w 40 258.0 m 572 258.0 l S
+BT /F2 12 Tf 0.008 0.518 0.780 rg 40 261.0 Td (CERTIFICATIONS & HONORS) Tj ET
+BT /F1 9 Tf 0.059 0.090 0.165 rg 40 241.0 Td (- AI & Data Science Specialization - NIT Kolhapur Honors Foundation Track (2026)) Tj ET
+BT /F1 9 Tf 0.059 0.090 0.165 rg 40 227.0 Td (- Python & Data Structures Computational Problem Solving Credential (2026)) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000005535 00000 n 
+0000005605 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5680
+%%EOF

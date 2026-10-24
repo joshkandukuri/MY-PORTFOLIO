@@ -413,7 +413,9 @@ body {
   font-size: 0.82rem;
   color: var(--neon-cyan);
   width: fit-content;
+  max-width: 100%;
   backdrop-filter: blur(8px);
+  text-align: center;
 }
 .pulse-beacon {
   width: 8px;

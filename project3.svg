@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040d1a"/>
+      <stop offset="100%" stop-color="#0b1e38"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <circle cx="400" cy="200" r="120" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6 6"/>
+  <circle cx="400" cy="200" r="80" fill="none" stroke="#a855f7" stroke-width="2" stroke-opacity="0.5"/>
+  <circle cx="400" cy="200" r="40" fill="none" stroke="#00ffc4" stroke-width="2.5"/>
+  <polygon points="400,100 480,240 320,240" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.6"/>
+  <circle cx="400" cy="100" r="7" fill="#00f0ff"/>
+  <circle cx="480" cy="240" r="7" fill="#a855f7"/>
+  <circle cx="320" cy="240" r="7" fill="#00ffc4"/>
+  <text x="400" y="385" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="16" text-anchor="middle" letter-spacing="3">DSA &amp; ALGORITHMIC VISUALIZER</text>
+</svg>

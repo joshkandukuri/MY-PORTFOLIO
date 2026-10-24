@@ -1,0 +1,9 @@
+# Temporary scripts
+capture.py
+capture_mobile.py
+output.pdf
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+*.log

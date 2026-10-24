@@ -17,7 +17,7 @@ def create_resume_pdf(filename):
     
     # Header Name
     commands.append(f"BT /F2 22 Tf {rgb(255, 255, 255)} 40 760 Td (JOSH KANDUKURI) Tj ET")
-    commands.append(f"BT /F1 10 Tf {rgb(0, 240, 255)} 40 747 Td (B.Tech - Computer Science, Artificial Intelligence & Data Science | NIT Kolhapur) Tj ET")
+    commands.append(f"BT /F1 10 Tf {rgb(0, 240, 255)} 40 747 Td (B.Tech - Computer Science, Artificial Intelligence & Data Science | NIAT Kolhapur) Tj ET")
 
     # Contact Info Bar
     commands.append(f"BT /F1 9 Tf {rgb(71, 85, 105)} 40 720 Td (Phone: +91 9347339725   |   Email: joshkandukuri08@gmail.com   |   Location: Kolhapur, Maharashtra, India) Tj ET")
@@ -37,7 +37,7 @@ def create_resume_pdf(filename):
 
     # 1. EDUCATION
     add_section_header("Education")
-    commands.append(f"BT /F2 10.5 Tf {rgb(15, 23, 42)} 40 {y} Td (National Institute of Technology (NIT), Kolhapur) Tj ET")
+    commands.append(f"BT /F2 10.5 Tf {rgb(15, 23, 42)} 40 {y} Td (NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur) Tj ET")
     commands.append(f"BT /F1 9.5 Tf {rgb(100, 116, 139)} 450 {y} Td (2026 - Present | First Year) Tj ET")
     y -= 14
     commands.append(f"BT /F2 9.5 Tf {rgb(30, 41, 59)} 40 {y} Td (Bachelor of Technology: ) Tj /F1 9.5 Tf {rgb(71, 85, 105)} (Computer Science, Artificial Intelligence & Data Science) Tj ET")

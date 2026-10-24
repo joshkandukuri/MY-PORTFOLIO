@@ -27,24 +27,24 @@ const PORTFOLIO_DATA = {
     fullName: "Josh Kandukuri",
     salutation: "Hello, I'm",
     headline: "First-Year B.Tech Student in Computer Science, Artificial Intelligence & Data Science",
-    institution: "National Institute of Technology (NIT), Kolhapur",
+    institution: "NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur",
     location: "Kolhapur, Maharashtra, India",
     statusBadge: "Available for AI/ML Projects & Collaborations",
     
     // Profile photo: place your photo in images/ and set the path below
     profilePhoto: "images/josh-profile.jpg",
-    profileAlt: "Josh - B.Tech CS (AI & Data Science) Student at NIT Kolhapur",
+    profileAlt: "Josh - B.Tech CS (AI & Data Science) Student at NIAT (NxtWave of Innovation in Advanced Technologies)",
 
     // Resume document path
     resumeFile: "assets/Josh_Kandukuri_Resume.pdf",
     resumeViewUrl: "assets/resume.html",
 
     // Short introduction paragraph for hero section
-    shortBio: "Passionate about building intelligent AI systems, neural network architectures, and data-driven solutions. Currently laying strong computational and mathematical foundations at NIT Kolhapur.",
+    shortBio: "Passionate about building intelligent AI systems, neural network architectures, and data-driven solutions. Currently laying strong computational and mathematical foundations at NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur.",
     
     // Detailed narrative for the About section
     aboutNarrative: [
-      "I am an enthusiastic first-year B.Tech undergraduate specializing in Computer Science, Artificial Intelligence, and Data Science at the National Institute of Technology (NIT), Kolhapur, Maharashtra.",
+      "I am an enthusiastic first-year B.Tech undergraduate specializing in Computer Science, Artificial Intelligence, and Data Science at NIAT (NxtWave of Innovation in Advanced Technologies), Kolhapur, Maharashtra.",
       "My passion lies at the intersection of mathematical reasoning, machine learning pipelines, and high-performance computing. I focus deeply on understanding algorithmic principles from the ground up—from linear algebra and discrete structures to neural network weight optimization and data transformations.",
       "Always eager to collaborate on challenging technical problems, participate in hackathons, and contribute to forward-thinking AI research and open-source initiatives."
     ],
@@ -53,7 +53,7 @@ const PORTFOLIO_DATA = {
     quickStats: [
       { label: "Academic Standing", value: "1st Year B.Tech", icon: "🎓" },
       { label: "Specialization", value: "AI & Data Science", icon: "🧠" },
-      { label: "Campus", value: "NIT Kolhapur", icon: "🏛️" },
+      { label: "Campus", value: "NIAT (NxtWave)", icon: "🏛️" },
       { label: "Location", value: "Maharashtra, IN", icon: "📍" }
     ]
   },
@@ -193,12 +193,12 @@ const PORTFOLIO_DATA = {
   hackathons: [
     {
       id: "hack-1",
-      name: "NIT Kolhapur Annual Tech Hackathon",
+      name: "NIAT Kolhapur Annual Tech Hackathon",
       edition: "2026 Edition",
       role: "AI / ML Developer & Team Lead",
       badge: "Active / Upcoming",
       badgeType: "primary",
-      location: "NIT Kolhapur Campus",
+      location: "NIAT Kolhapur Campus",
       date: "Spring 2026",
       summary: "Developing an AI-driven predictive intelligence model addressing smart campus resource allocation and autonomous energy optimization.",
       technologies: ["Python", "Machine Learning", "Data Modeling", "API Integration"],
@@ -229,9 +229,9 @@ const PORTFOLIO_DATA = {
     {
       id: "cert-1",
       title: "Artificial Intelligence & Data Science Specialization",
-      issuer: "NIT Kolhapur Academic Honors Track",
+      issuer: "NIAT Kolhapur Academic Honors Track",
       issueDate: "2026",
-      credentialId: "NITK-AIDS-2026-F01",
+      credentialId: "NIAT-AIDS-2026-F01",
       image: "images/certificates/cert1.svg",
       verificationUrl: "#",
       description: "Comprehensive foundational mastery of algorithmic data science, probability distributions, matrix computations, and modern artificial intelligence concepts."
@@ -256,7 +256,7 @@ const PORTFOLIO_DATA = {
     {
       year: "Year 1 - Semester 1 (Current)",
       stage: "Foundational Computer Science & AI Inception",
-      institution: "NIT Kolhapur, Maharashtra",
+      institution: "NIAT, Kolhapur, Maharashtra",
       icon: "fa-university",
       status: "current",
       points: [
@@ -268,19 +268,19 @@ const PORTFOLIO_DATA = {
     {
       year: "Year 1 - Semester 2 (Upcoming)",
       stage: "Advanced Data Structures, Algorithms & Neural Networks",
-      institution: "NIT Kolhapur",
+      institution: "NIAT Kolhapur",
       icon: "fa-microchip",
       status: "upcoming",
       points: [
         "Mastering object-oriented principles, dynamic programming, and graph algorithms.",
         "Implementing core neural network architectures (MLP, CNN) and PyTorch pipelines.",
-        "Competing in state and national collegiate hackathons."
+        "Competing in collegiate hackathons and coding sprints."
       ]
     },
     {
       year: "Year 2 & Beyond (Roadmap)",
       stage: "Applied Machine Learning, Computer Vision & Research",
-      institution: "NIT Kolhapur & AI Industry Partnerships",
+      institution: "NIAT Kolhapur & AI Industry Partnerships",
       icon: "fa-rocket",
       status: "future",
       points: [

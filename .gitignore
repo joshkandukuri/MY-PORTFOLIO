@@ -1,7 +1,9 @@
-# Temporary scripts
+# Temporary scripts & local tools
 capture.py
 capture_mobile.py
 output.pdf
+http_server.ps1
+cloudflared.exe
 
 # OS & Environment
 .DS_Store
